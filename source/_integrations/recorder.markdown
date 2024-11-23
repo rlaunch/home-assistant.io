@@ -259,6 +259,8 @@ When using SQLite, if the system encounters unrecoverable disk corruption, it wi
 
 In this event, it may be possible to recover the old database by following the [SQLite recovery guide](https://www.sqlite.org/recovery.html).
 
+The system will create a persistent notification and will fire the event `recorder_database_corrupt` if corruption is detected.
+
 ## Custom database engines
 
 {% warning %}
